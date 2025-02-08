@@ -2,5 +2,83 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: "Helvetica Neue",;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(/wallpaperflare.com_wallpaper\ \(1\).jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #ffffff28;
+    backdrop-filter: blur(2px) !important;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 2rem;
+    color: #ffffff;
+    user-select: none;
+}
+
+
+.navbar a{
+    position: relative;
+    font-size: 1em;
+    font-weight: 500;
+    margin-left: 40px;
+    color: #ffffff;
+}
+
+.navbar a::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: transform 0.4s ease-in-out;
+}
+
+.navbar a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.btp{
+   width: 130px;
+   height: 50px;
+   background: transparent;
+   border: 2px solid #fff;
+   border-radius: 6px;
+   outline: none;
+   cursor: pointer;
+   font-size: 1.1em;
+   font-weight: 500;
+   color: #fff;
+   margin-left: 40px;
+   transition: background-color 0.3s ease-in-out;
+}
+
+.btp:hover{
+    background-color: #ffffff;
+    color: #000;
 }
