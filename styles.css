@@ -97,7 +97,7 @@ header {
   align-items: center;
   background-color: #ffffff0e;
   color: #ffffff;
-  /* overflow: hidden; */
+  overflow: hidden;
   transition: height .2s ease;
 }
 
@@ -129,7 +129,7 @@ header {
   transition: none;
   transform: translateX(400px);
 }
-.wrapper.action .form-box.register{
+.wrapper.active .form-box.register{
   transition: transform .18s ease;
   transform: translateX(0);
 }
